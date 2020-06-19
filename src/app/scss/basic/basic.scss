@@ -10,7 +10,7 @@ body {
   height: 100%;
 
   font-family: $roboto;
-  font-size: $base-size;
+  font-size: 12px;
   line-height: 1.16666667;
   font-style: normal;
   font-weight: 400;
@@ -31,9 +31,6 @@ input::-webkit-inner-spin-button {
 }
 
 .container {
-  position: relative;
-
-  max-width: size(1560);
   margin-left: auto;
   margin-right: auto;
   padding-left: size(15);

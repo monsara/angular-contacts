@@ -1,11 +1,14 @@
 <app-contacts-header></app-contacts-header>
-<div>
-	<app-contacts-filter></app-contacts-filter>
-	<div>
-		<app-contact-card *ngFor="let contact of contacts | async" [contact]="contact"></app-contact-card>
-	</div>
-	<div class="paginator-block">
-		pagination
-		<!-- put your code here -->
-	</div>
+<div class="container">
+  <app-contacts-filter></app-contacts-filter>
+  <div>
+    <app-contact-card
+      *ngFor="let contact of contacts | async"
+      [contact]="contact"
+    ></app-contact-card>
+  </div>
+  <div class="paginator-block">
+    pagination
+    <!-- put your code here -->
+  </div>
 </div>

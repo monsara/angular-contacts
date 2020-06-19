@@ -2,7 +2,8 @@
 $colorLightseagreen: lightseagreen;
 $colorLightsalmon: lightsalmon;
 
-$base-size: 12;
+// The default font size for html is 16px
+$base-size: 16;
 
 $roboto: "Roboto";
 
@@ -13,6 +14,7 @@ $colorBlack: #000000;
 $textColorDefault: #a6aaad;
 $textColorSecondary: #212121;
 $textColorSecondaryLighter: #333333;
+$textColorSecondaryDarker: #282b2e;
 
 $borderColorDefault: #6e767d;
 $borderColorSecondary: #d7d7d7;

@@ -1,0 +1,23 @@
+@import "../../../../app/scss/basic/variables.scss";
+
+.contacts-header {
+  width: 90%;
+  margin: auto;
+  padding-top: size(24);
+  padding-bottom: size(24);
+
+  text-align: center;
+  border-bottom: size(3) solid $borderColorSecondary;
+
+  &__title {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: size(22);
+    line-height: (26/22);
+
+    color: $textColorSecondaryDarker;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
