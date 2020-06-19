@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  font-family: $roboto;
+  font-size: $base-size;
+  line-height: 1.16666667;
+  font-style: normal;
+  font-weight: 400;
+}
+
+select {
+  cursor: pointer;
+
+  option {
+    cursor: pointer;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+
+  max-width: size(1560);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: size(15);
+  padding-right: size(15);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

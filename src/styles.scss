@@ -1,2 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'variables.scss';
+// @import "variables.scss";
+
+//----- basic styles -----//
+@import "app/scss/basic/variables.scss";
+@import "app/scss/basic/mixins.scss";
+@import "app/scss/basic/normalize.scss";
+@import "app/scss/basic/basic.scss";
+
+//----- components styles -----//
+@import "app/contacts/components/contacts-main/contacts-main.component.scss";
+@import "app/contacts/components/contacts-header/contacts-header.component.scss";
+@import "app/contacts/components/contacts-filter/contacts-filter.component.scss";
+@import "app/contacts/components/contact-card/contact-card.component.scss";
