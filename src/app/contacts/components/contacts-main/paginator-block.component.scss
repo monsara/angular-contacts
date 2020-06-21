@@ -1,0 +1,50 @@
+.paginator-block {
+  display: none;
+
+  @include desktop {
+    display: inline-flex;
+    width: 100%;
+
+    justify-content: center;
+
+    &__page-number {
+      &:not(:last-child) {
+        margin-right: size(16);
+      }
+    }
+
+    &__button {
+      display: flex;
+      width: size(24.61);
+      height: size(24.61);
+
+      justify-content: center;
+      align-items: center;
+
+      font-weight: bold;
+      font-size: size(14);
+      line-height: (16/14);
+
+      color: $colorDarkGray;
+
+      border-radius: 50%;
+      border: 1.28px solid $colorDarkGray;
+      transition: background-color, border-width 0.2s ease-in-out;
+
+      cursor: pointer;
+
+      &_current {
+        color: $colorRed;
+        border-color: $colorRed;
+      }
+
+      &.icon-right {
+        font-size: size(12);
+      }
+
+      &:hover {
+        background-color: $colorLightGray;
+      }
+    }
+  }
+}

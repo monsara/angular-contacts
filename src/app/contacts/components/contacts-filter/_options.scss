@@ -1,0 +1,12 @@
+&-options {
+  &__content {
+    display: flex;
+    margin-bottom: size(28.8);
+
+    flex-flow: column;
+
+    @media (min-width: 667px) {
+      flex-flow: row;
+    }
+  }
+}

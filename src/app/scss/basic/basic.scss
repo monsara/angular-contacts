@@ -9,32 +9,59 @@ html {
 body {
   height: 100%;
 
-  font-family: $roboto;
-  font-size: 12px;
+  font-family: $baseFont;
+  font-size: size(12);
   line-height: 1.16666667;
   font-style: normal;
   font-weight: 400;
+
+  background-color: $colorWhite;
+
+  word-break: break-word;
+
+  @include desktop {
+    background-color: $colorLightGray;
+  }
 }
 
 select {
   cursor: pointer;
+  appearance: none;
 
   option {
     cursor: pointer;
   }
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.title {
   margin: 0;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: size(15);
-  padding-right: size(15);
+  padding: 0 size(15);
+
+  @media (min-width: 540px) {
+    max-width: size(540);
+    padding: 0;
+  }
+
+  @include tablet {
+    max-width: size(720);
+  }
+
+  @include laptop {
+    max-width: size(900);
+  }
+
+  @include desktop {
+    max-width: 85%;
+  }
+
+  @include large {
+    max-width: size(1200);
+  }
 }
 
 .hidden {

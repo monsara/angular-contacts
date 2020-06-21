@@ -1,0 +1,68 @@
+//import global project variables
+@import "../../../scss/basic/variables.scss";
+@import "../../../scss/basic/media_variables.scss";
+
+.contact-card {
+  &-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    @include desktop {
+      margin-bottom: size(14);
+    }
+
+    &__contact-card {
+      display: flex;
+      margin-bottom: size(30);
+
+      @include tablet {
+        max-width: size(275.812);
+        margin-right: size(60);
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__image {
+    margin-right: size(28);
+    width: size(67);
+    height: siz(67);
+
+    flex: none;
+
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__name {
+    margin-bottom: size(10);
+    font-size: size(16);
+    line-height: (24/16);
+
+    color: rgba($textColorSecondaryDarker, 0.871);
+    letter-spacing: 0.15px;
+  }
+
+  &__organization,
+  &__department {
+    margin-bottom: size(5);
+
+    color: $textColorDefault;
+  }
+
+  &__position {
+    margin-bottom: size(10);
+
+    color: $textColorDefault;
+  }
+
+  &__phone,
+  &__email {
+    color: $textColorSecondary;
+  }
+}

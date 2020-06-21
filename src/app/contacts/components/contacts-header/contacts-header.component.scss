@@ -1,17 +1,27 @@
 @import "../../../../app/scss/basic/variables.scss";
+@import "../../../../app/scss/basic/media_variables.scss";
+@import "../../../../app/scss/basic/icons.scss";
 
 .contacts-header {
-  width: 90%;
-  margin: auto;
-  padding-top: size(24);
-  padding-bottom: size(24);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: size(20);
+  padding: size(24) 0;
 
   text-align: center;
   border-bottom: size(3) solid $borderColorSecondary;
+  background-color: $colorLightGray;
+
+  @include laptop {
+    margin-bottom: size(31);
+  }
+
+  @include desktop {
+    width: 97%;
+    margin-bottom: 0;
+  }
 
   &__title {
-    margin: 0;
-
     font-weight: bold;
     font-size: size(22);
     line-height: (26/22);

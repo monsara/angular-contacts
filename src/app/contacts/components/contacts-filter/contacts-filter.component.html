@@ -1,16 +1,51 @@
-<div>
-	<form formGroup="fg">
-		<div>
-			<select formControlName="select">
-				<option value="option{{i}}" *ngFor="let option of selectOptions; let i = index">Option {{i}}</option>
-			</select>
-		</div>
-		<div>
-			<input type="text" placeholder="Введите ФИО, должность или номер телефона" formControlName="input">
-		</div>
-	</form>
+<div class="contacts-filter page__contacts-filter">
+  <form class="contacts-filter__form" formGroup="fg">
+    <div
+      class="contacts-filter__form-block contacts-filter__select-wrap icon-angle-down"
+    >
+      <select class="contacts-filter__select" formControlName="select">
+        <option
+          value="option{{ i }}"
+          *ngFor="let option of selectOptions; let i = index"
+          >Option {{ i }}</option
+        >
+      </select>
+    </div>
+    <div
+      class="contacts-filter__form-block contacts-filter__search-input-wrap icon-search"
+    >
+      <input
+        class="contacts-filter__search-input"
+        type="text"
+        placeholder="Введите ФИО, должность или номер телефона"
+        formControlName="input"
+      />
+    </div>
+  </form>
 </div>
-<button class="toggle-button">
-	toggle-button
-	<!-- put your code here -->
-</button>
+
+<div class="contacts-filter-options contacts-filter-options__content">
+  <div class="toggle-button-wrap">
+    <input
+      type="checkbox"
+      name="toggle"
+      id="toggle-button-1"
+      class="toggle-button"
+    />
+    <label for="toggle-button-1" class="toggle-button__text"
+      >Показать структуру контактов
+    </label>
+  </div>
+
+  <div class="toggle-button-wrap">
+    <input
+      type="checkbox"
+      name="toggle"
+      id="toggle-button-2"
+      class="toggle-button"
+    />
+    <label for="toggle-button-2" class="toggle-button__text"
+      >Активное состояние
+    </label>
+  </div>
+</div>

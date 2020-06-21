@@ -1,0 +1,75 @@
+.toggle-button {
+  position: relative;
+
+  width: size(34);
+  height: size(14);
+  margin: 0;
+
+  vertical-align: top;
+
+  background: $colorLightGray;
+  border-radius: size(30);
+  outline: none;
+  cursor: pointer;
+
+  appearance: none;
+
+  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: size(-3);
+
+    width: size(19);
+    height: size(19);
+    background-color: #fafafa;
+    border-radius: 50%;
+    box-shadow: 0 size(2) size(3) size(-2);
+
+    transform: translateX(0);
+
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+
+  &:checked::after {
+    transform: translateX(calc(100% - 3px));
+  }
+
+  &:checked {
+    background-color: #aeaeae;
+  }
+
+  &-wrap {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: size(12.2);
+    }
+
+    @media (min-width: 667px) {
+      margin-bottom: 0;
+      margin-right: size(30);
+    }
+
+    @include tablet {
+      margin-right: size(54);
+    }
+  }
+
+  &__text {
+    margin-left: size(6);
+
+    font-size: size(16);
+    line-height: (19/16);
+
+    color: $colorBlack;
+    opacity: 0.3;
+    letter-spacing: size(0.15);
+
+    cursor: pointer;
+  }
+}

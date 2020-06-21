@@ -1,7 +1,14 @@
 //import global project variables
 @import "../../../scss/basic/variables.scss";
+@import "../../../scss/basic/media_variables.scss";
 
-.toggle-button {
-  display: inline-flex;
-  background: $colorLightseagreen;
+.contacts-filter {
+  @import "form.scss";
+  @import "select.scss";
+  @import "search-input.scss";
+  @import "options.scss";
+
+  margin-bottom: size(12.2);
 }
+
+@import "toggle-button.component.scss";

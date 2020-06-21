@@ -1,7 +1,24 @@
 //import global project variables
 @import "../../../scss/basic/variables.scss";
+@import "../../../scss/basic/media_variables.scss";
 
-.paginator-block {
-  display: inline-flex;
-  background: $colorLightsalmon;
+.contacts-main {
+  background-color: $colorWhite;
+
+  @include desktop {
+    margin-bottom: size(23);
+    padding-top: size(41);
+    padding-right: size(70);
+    padding-bottom: size(38);
+    padding-left: size(70);
+  }
+
+  @include large {
+    padding-top: size(41);
+    padding-right: size(93);
+    padding-bottom: size(38);
+    padding-left: size(93);
+  }
 }
+
+@import "paginator-block.component.scss";
