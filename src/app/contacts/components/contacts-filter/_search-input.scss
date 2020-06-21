@@ -1,6 +1,6 @@
 &__search-input {
   width: 100%;
-
+  min-height: size(34);
   padding-top: size(10);
   padding-right: size(33);
   padding-bottom: size(10);
@@ -17,6 +17,7 @@
   outline: none;
 
   @media (min-width: 667px) {
+    min-height: size(28);
     padding-top: size(6);
     padding-bottom: size(7);
     padding-left: size(8.29);
