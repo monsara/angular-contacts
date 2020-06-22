@@ -1,6 +1,36 @@
-# TestAssignment
+# angular-contacts
 
+https://monsara.github.io/angular-contacts/
+
+HTML layout and styling of single-page application for searching contacts&
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+
+## Browser Support
+
+New browsers — Firefox, Chrome, Opera, Microsoft Edge and IE 11, newer versions
+of Android/iOS, etc.
+
+## Used techniques
+
+### HTML/CSS
+
+- Cross-browser layout
+- Responsive web design
+- CSS Flexbox
+- CSS Media Queries
+- Mobile first
+- BEM methodology
+- Sass (mixins, variables, SCSS modules)
+- Fontello font-icons
+
+## Instruments
+
+- Angular
+- Git
+- Npm
+- Webpack
+- Chrome DevTools
+- VS Code
 
 ## Development server
 
