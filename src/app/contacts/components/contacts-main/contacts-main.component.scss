@@ -6,11 +6,15 @@
   background-color: $colorWhite;
 
   @include desktop {
+    display: flex;
+    min-height: 90%;
     margin-bottom: size(23);
     padding-top: size(41);
     padding-right: size(70);
     padding-bottom: size(38);
     padding-left: size(70);
+
+    flex-flow: column;
   }
 
   @include large {
