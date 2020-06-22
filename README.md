@@ -2,7 +2,7 @@
 
 https://monsara.github.io/angular-contacts/
 
-HTML layout and styling of single-page application for searching contacts&
+HTML layout and styling of single-page application for searching contacts.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
 
 ## Browser Support
